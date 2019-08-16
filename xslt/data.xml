@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<data>
+    <viesti>
+        <lähettäjä>Jaska</lähettäjä>
+        <aihe>Aihe</aihe>
+        <teksti>Heippa vaan!</teksti>
+        <aika>16.8.2019 9:36</aika>
+        <vuosi>2019</vuosi>
+    </viesti>
+    <viesti>
+        <lähettäjä>Tiina</lähettäjä>
+        <aihe>Kiitos!</aihe>
+        <teksti>Heippa vaan!</teksti>
+        <aika>16.8.2019 9:36</aika>
+        <vuosi>2020</vuosi>
+    </viesti>
+    <viesti>
+        <lähettäjä>Keijo</lähettäjä>
+        <aihe>En tykänny</aihe>
+        <teksti>Heippa vaan!</teksti>
+        <aika>16.8.2019 9:36</aika>
+        <vuosi>2021</vuosi>
+    </viesti>
+</data>

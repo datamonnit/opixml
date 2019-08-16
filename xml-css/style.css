@@ -1,0 +1,11 @@
+viesti {
+    display: block;
+    margin: 20px;
+    border: 1px solid red;
+    padding: 10px;
+    background-color: yellow;
+}
+lähettäjä {
+    display: block;
+    font-size: 2em;
+}

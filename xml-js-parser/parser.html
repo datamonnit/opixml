@@ -3,48 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Parser-demo</title>
 </head>
-<body onload="loadXML()">
+<body>
+    <h1>Viestit</h1>
+    <div id="viesti">
+
+    </div>
+
     
-<h1>Parser-demo</h1>
-<button onclick="loadXML()">Lataa XML</button>
-<div id="data"></div>
-
-<script>
-function loadXML(){
-    const xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        parseXML(this);
-    }
-    };
-    xhttp.open("GET", "data.xml", true);
-    xhttp.send();
-} 
-
-function parseXML(xml){
-    let i;
-    let htmlData = '<ul style="list-style-type: none; margin: 0;">';
-    const xmlDoc = xml.responseXML;
-    const viestit = xmlDoc.getElementsByTagName("viesti");
-
-    for (i = 0; i < viestit.length; i++ ) {
-        htmlData += "<li>";
-        htmlData += "<h2>" + viestit[i].getElementsByTagName("lähettäjä")[0].childNodes[0].nodeValue + "</h2>";
-        htmlData += "<h3>" + viestit[i].getElementsByTagName("aihe")[0].childNodes[0].nodeValue + "</h3>";
-        htmlData += "<p>" + viestit[i].getElementsByTagName("teksti")[0].childNodes[0].nodeValue + "</p>";
-        htmlData += "<p>" + viestit[i].getElementsByTagName("aika")[0].childNodes[0].nodeValue + "</p>";
-        htmlData += "<p>" + viestit[i].getElementsByTagName("vuosi")[0].childNodes[0].nodeValue + "</p>";
-        htmlData += "</li>";
-    }
-
-    htmlData += "</ul>";
-
-    document.getElementById("data").innerHTML = htmlData;
-
-}
-</script>
+    <script src="parser2.js"></script>
 </body>
 </html>

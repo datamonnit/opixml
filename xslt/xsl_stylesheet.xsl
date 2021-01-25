@@ -23,7 +23,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   
   <ul class="mylist">
     <xsl:for-each select="catalog/cd">
-      <xsl:sort select="year" order="descending"/>
+      <xsl:sort select="year" order="ascending"/>
       <xsl:sort select="artist" order="ascending"/>
 
       <li>
